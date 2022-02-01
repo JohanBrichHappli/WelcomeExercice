@@ -1,4 +1,4 @@
-package com.example.employee_check_in;
+package com.example.employee_check_in.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DefaultItemAnimator;
@@ -8,6 +8,10 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+
+import com.example.employee_check_in.Model.Employee;
+import com.example.employee_check_in.R;
+import com.example.employee_check_in.ViewModel.RecyclerAdapter;
 
 import java.util.ArrayList;
 

@@ -1,6 +1,5 @@
-package com.example.employee_check_in;
+package com.example.employee_check_in.ViewModel;
 
-import android.text.Layout;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +7,9 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.employee_check_in.Model.Employee;
+import com.example.employee_check_in.R;
 
 import java.util.ArrayList;
 

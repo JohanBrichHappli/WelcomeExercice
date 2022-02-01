@@ -11,10 +11,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Employee_check_in">
         <activity
-            android:name=".EmployeesListActivity"
+            android:name=".View.EmployeesListActivity"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".View.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

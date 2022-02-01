@@ -1,4 +1,4 @@
-package com.example.employee_check_in;
+package com.example.employee_check_in.Model;
 
 public class Employee {
     private String name;
