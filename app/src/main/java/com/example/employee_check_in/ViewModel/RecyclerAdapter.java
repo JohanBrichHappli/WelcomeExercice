@@ -12,18 +12,18 @@ import com.example.employee_check_in.Model.Employee;
 import com.example.employee_check_in.R;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyViewHolder> {
 
-    private ArrayList<Employee> employeesList;
+    private List<Employee> employeesList;
     private RecyclerViewClickListener listener;
 
-    public RecyclerAdapter(ArrayList<Employee> employeesList, RecyclerViewClickListener listener) {
-        this.employeesList = employeesList;
+    public RecyclerAdapter(RecyclerViewClickListener listener) {
         this.listener = listener;
     }
 
-    public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+    public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         private TextView employeeNameText;
 
         public MyViewHolder(final View view) {
@@ -49,12 +49,20 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.MyView
     public void onBindViewHolder(@NonNull RecyclerAdapter.MyViewHolder holder, int position) {
         String employeeName = employeesList.get(position).getName();
         holder.employeeNameText.setText(employeeName);
-
     }
 
     @Override
     public int getItemCount() {
         return employeesList == null ? 0 : employeesList.size();
+    }
+
+    public void setEmployeesList(List<Employee> employees) {
+        this.employeesList = employees;
+        notifyDataSetChanged();
+    }
+
+    public List<Employee> getEmployeesList() {
+        return employeesList;
     }
 
     public interface RecyclerViewClickListener {
