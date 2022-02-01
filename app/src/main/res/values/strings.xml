@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Employee_check_in</string>
+    <string name="check_out">Check-out</string>
+    <string name="check_in">Check-in</string>
+    <string name="employee_list">Employee List</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
